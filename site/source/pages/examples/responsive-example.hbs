@@ -57,18 +57,6 @@ layout: example.hbs
   window.onresize = updateChart;
 
   function updateChart() {
-    var el = document.getElementById("chart");
-    var width = el.offsetWidth;
-    
-    chart.override = {
-      "width": width,
-      "marks": [{"properties": {
-          "hover": {"fill": {"value": "#3ba3d0"}},
-          "update": {"fill": {"value": "#7de6ff"}}
-        }
-      }]
-    }
-
     chart.update();
   }
 {{>example-code-footer}}
@@ -92,20 +80,6 @@ layout: example.hbs
     //assign to the chart
     chart.dataset = dataset;
 
-    var el = document.getElementById("chart");
-    var width = el.offsetWidth;
-    var height = el.offsetHeight;
-
-    chart.override = {
-      "height": height,
-      "width": width,
-      "marks": [{"properties": {
-          "hover": {"fill": {"value": "#3ba3d0"}},
-          "update": {"fill": {"value": "#7de6ff"}}
-        }
-      }]
-    };
-
     //show the chart
     chart.show({
       elementId: "#chart"
@@ -120,18 +94,6 @@ layout: example.hbs
   window.onresize = updateChart;
 
   function updateChart() {
-    var el = document.getElementById("chart");
-    var width = el.offsetWidth;
-    
-    chart.override = {
-      "width": width,
-      "marks": [{"properties": {
-          "hover": {"fill": {"value": "#3ba3d0"}},
-          "update": {"fill": {"value": "#7de6ff"}}
-        }
-      }]
-    }
-
     chart.update();
   }
 </script>
