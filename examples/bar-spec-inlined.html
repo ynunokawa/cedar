@@ -23,14 +23,15 @@
   <!-- stylesheet -->
   <link rel="stylesheet" href="../../../cedar/css/style.css">
 
-  <!-- Cedar -->
-
-  <!-- esri Cedar -->
-  <script type="text/javascript" src="http://square.github.io/crossfilter/d3.v3.min.js"></script>
-  <script type="text/javascript" src="../../../cedar/js/vega.js"></script>
+  <!-- Cedar and dependencies (d3, vega) -->
+  <!-- NOTE: the bar chart examle does not work w/ latest vega (v1.5+), so here we are pulling in an oldder version (v1.4.3) -->
+  
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/vega/1.4.3/vega.min.js"></script>
+    <script type="text/javascript" src="../../../cedar/js/cedar.js"></script>
+  
+  <!-- NOTE: underscore is used by a few examples, but is not needed by Cedar -->
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
-  <script type="text/javascript" src="../../../cedar/js/cedar-core.js"></script>
-   <!--<script type="text/javascript" src="../../../cedar/js/cedar-vega-d3.min.js"></script>-->
 
 
   <!-- Google Analytics -->
@@ -62,7 +63,7 @@
         
         <li><a href="../../../cedar/api/">API Documentation</a></li>
         <li><a href="../../../cedar/examples/">Examples</a></li>
-        <li><a href="https://github.com/esridc/cedar">Github</a></li>
+        <li><a href="https://github.com/esri/cedar">Github</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -344,7 +345,7 @@
   });
 </script>
   <div class="wrap">
-    <p><a href="http://github.com/esridc/cedar/edit/master/site/source/pages/examples/bar-spec-inlined.hbs">Edit this sample on GitHub</a></p>
+    <p><a href="http://github.com/esri/cedar/edit/master/site/source/pages/examples/bar-spec-inlined.hbs">Edit this sample on GitHub</a></p>
   </div>
 </div>
 
